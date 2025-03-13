@@ -12,7 +12,13 @@ const projectSchema = new mongoose.Schema(
     degree: { type: String },
     type: { type: String },
     price: { type: Number, required: true },
-    projectfile: { type: String, required: true },
+    // projectfile: { type: String, required: true },
+    projectfile: {
+    filename: String,
+    fileData: String, // Store as Base64
+    contentType: String,
+  },
+    projectImage: { type: String, required: true }, // New field for project image
   },
   { timestamps: true }
 );

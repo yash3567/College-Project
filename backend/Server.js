@@ -37,7 +37,7 @@ app.use("/api/files", fileUploadRoutes); // <-- ADD THIS
 app.use("/api", projectRoutes);
 // Verificaton API **************
 app.use("/api", emailVerifyRoutes);
-// app.use("/api/projectpage", projectPageRoutes)
+
 
 if (process.env.NODE_ENV === "production") {
   app.use(express.static(path.join(__dirname, "/frontend/dist")));

@@ -18,9 +18,14 @@ const storage = multer.diskStorage({
 
 const upload = multer({ storage: storage });
 
-// Post Routes hai projects to push krne k liye
-// upload.single("name of the variable")
-router.post("/projects", upload.single("projectfile"), handleProjects);
+router.post("/projects", 
+  upload.fields([
+    { name: "projectfile", maxCount: 1 },
+    { name: "projectImage", maxCount: 1 }
+  ]), 
+  handleProjects
+);
+
 // get Route for Project Getting from DB
 router.get("/projectpage", projectData);
 

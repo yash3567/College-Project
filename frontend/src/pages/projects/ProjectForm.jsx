@@ -15,11 +15,16 @@ const ProjectForm = () => {
   const [link, setLink] = useState("");
   const [techused, setTechUsed] = useState("");
   const [price, setPrice] = useState("");
+  const [projectImage, setProjectImage] = useState(null); // New state for image
 
   const navigate = useNavigate(); // Initialize the useNavigate hook
 
   const handleFileChange = (e) => {
     setProjectFile(e.target.files[0]); // Store the selected file in state
+  };
+
+  const handleImageChange = (e) => {
+    setProjectImage(e.target.files[0]); // Store selected image in state
   };
 
   const handleSubmit = async (e) => {
@@ -36,6 +41,7 @@ const ProjectForm = () => {
     formData.append("techused", techused);
     formData.append("price", price);
     formData.append("projectfile", projectfile);
+    formData.append("projectImage", projectImage); // Append project image
 
     try {
       const projectResult = await axios.post(
@@ -240,6 +246,21 @@ const ProjectForm = () => {
               </label>
             </div>
           </div>
+
+          {/* Project Image Upload */}
+          <div className="mb-4">
+            <label className="block text-sm font-bold mb-2" htmlFor="projectImage">
+              Upload Project Image
+            </label>
+            <input
+              className="w-[320px] text-black border rounded px-3 py-2 outline-none focus:border-blue-500"
+              type="file"
+              id="projectImage"
+              onChange={handleImageChange}
+              accept="image/*"
+            />
+          </div>
+
 
           {/* Deploy Link Field */}
           <div className="mb-4">

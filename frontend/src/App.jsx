@@ -1,5 +1,4 @@
 import { Routes, Route, Navigate } from "react-router-dom";
-// import Header from "./components/layouts/Header";
 import Home from "./pages/Home.jsx";
 import About from "./pages/about/About.jsx";
 import ContactUs from "./pages/contact/ContactUs.jsx";
@@ -9,8 +8,6 @@ import SignUpPage from "./pages/auth/signup/SignUpPage";
 import LoadingSpinner from "./components/common/LoadingSpinner";
 import { useQuery } from "@tanstack/react-query";
 import ProfilePage from "./pages/profile/ProfilePage.jsx";
-// import Sidebar from "./components/common/Sidebar";
-// import RightPanel from "./components/common/RightPanel";
 import { Toaster } from "react-hot-toast";
 import { createContext, useEffect, useState } from "react";
 import Projects from "./pages/projects/Projects.jsx";

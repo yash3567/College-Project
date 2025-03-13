@@ -1,6 +1,5 @@
 import "./contact.css"; // Import the CSS for styling
 import Layout from "./../../components/layouts/Layout";
-import { Link } from "react-router-dom";
 import "./contactForm.css";
 
 const ContactUs = () => {
