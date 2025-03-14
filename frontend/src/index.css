@@ -29,6 +29,7 @@ body {
     color: #e2e8f0;
     /* Dark mode text color */
 }
+
 body.dark {
     background: #071739 !important;
 }
@@ -51,13 +52,16 @@ body.dark .link {
     color: #0858f7 !important;
     text-decoration: none;
 }
+
 body.dark header {
     background: #112143 !important;
 }
+
 body.dark header .logo span {
     color: #fff !important;
     opacity: 0.9;
 }
+
 body.dark header button.rounded-circle {
     background: #112755 !important;
 }
@@ -65,11 +69,14 @@ body.dark header button.rounded-circle {
 body.dark header button.rounded-circle svg {
     color: #fff !important;
 }
+
 body.dark .searchBox input,
 body.dark .searchBox input::-webkit-input-placeholder,
 body.dark .searchBox svg {
     color: rgba(255, 255, 255, 0.7);
-}body.dark .myAcc .userInfo * {
+}
+
+body.dark .myAcc .userInfo * {
     color: rgba(255, 255, 255, 0.8) !important;
 }
 
@@ -90,6 +97,7 @@ header button.rounded-circle {
     background: #f0f5ff !important;
     color: #0858f7;
 }
+
 /* Ensure to use utility classes or custom CSS classes for other elements as needed */
 
 
@@ -278,11 +286,6 @@ a:hover {
 }
 
 
-/* #######home pages########### */
-/* .main-container{
-  height: 80%;
-  background-color: bisque;
-} */
 
 
 /* General navbar styles */
@@ -298,12 +301,15 @@ a:hover {
     background-color: rgb(31, 29, 29);
     color: white;
     margin-top: 1rem;
+    justify-content: center;
+    align-items: center;
 
 }
 
 .footer-ul li {
     color: white;
     margin: 6px 0;
+
 }
 
 
@@ -314,5 +320,3 @@ a:hover {
     padding: 0px 6px;
     margin: 10px 0px;
 }
-
-
