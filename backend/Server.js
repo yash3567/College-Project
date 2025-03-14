@@ -10,7 +10,7 @@ import userRoutes from "./routes/user.route.js";
 import postRoutes from "./routes/post.route.js";
 import notificationRoutes from "./routes/notification.route.js";
 import fileUploadRoutes from "./routes/fileUpload.route.js"; // <-- ADD THIS
-import projectRoutes from "./routes/project-Routes.js"
+import projectRoutes from "./routes/projectRoutes.js"
 import emailVerifyRoutes from "./routes/verifyEmail-Routes.js"
 dotenv.config();
 
